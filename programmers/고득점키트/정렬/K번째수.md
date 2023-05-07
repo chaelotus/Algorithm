@@ -13,7 +13,7 @@ commands에 있는 배열의 수 만큼 반복문을 돌려 slice 메서드를 �
 
 ## 코드
 
-```
+```js
 function solution(array, commands) {
 
   let answer = [];
