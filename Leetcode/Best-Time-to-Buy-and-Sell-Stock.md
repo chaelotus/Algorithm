@@ -42,3 +42,22 @@ var maxProfit = function(prices) {
   return max - min;
 };
 ```
+솔루션 코드
+```js
+var maxProfit = function(prices) {
+    let left = 0;
+    let right = 1;
+    let max_profit = 0;
+
+    while(right<prices.length){
+        if(prices[left]<prices[right]){
+          max_profit = Math.max(max_profit,prices[right]-prices[left]);
+        }
+        else{
+            left = right;
+        }
+        right+=1;
+    }
+    return max_profit;
+};
+```
