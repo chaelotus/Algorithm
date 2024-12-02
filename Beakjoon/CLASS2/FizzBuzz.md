@@ -27,3 +27,22 @@ elif n%5==0:
 else:
     print(n)
 ```
+
+## 다시 푼 코드
+
+```py
+for i in range(3,0,-1):
+    s = input()
+    if(s not in ['Fizz', 'Buzz','FizzBuzz']):
+        n = s
+        break
+
+c = int(n) + i
+if(c%3==0 and c%5==0):
+    print('FizzBuzz')
+elif(c%3==0 and c% 5 != 0):
+    print('Fizz')
+elif(c%3!=0 and c % 5==0):
+    print('Buzz')
+else: print(c)
+```
